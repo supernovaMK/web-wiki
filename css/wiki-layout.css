@@ -98,9 +98,9 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("../images/IMG_6951.JPG");
   background-size: 100%;
-  background-position: center 100%;
+  background-position: center 50%;
   width: var(--aside-width);
   height: var(--aside-width);
 
@@ -108,6 +108,9 @@ aside h2 {
 }
 
 aside.right-sidebar nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
   padding: var(--right-sidebar-padding);
 }
 
@@ -151,4 +154,43 @@ footer p {
 
   --divider-color: #efefef;
   --font-default-color: #333;
+}
+
+hr {
+  background: darkgreen;
+  width: 100%;
+  height: 3px;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.comment-author {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.comment-author img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.comment-content {
+  margin-top: 8px;
+}
+
+
+.gallery {
+  display: flex;
+  justify-content: center;
 }
